@@ -120,7 +120,7 @@ function pogody(){
 	
 	/Typed js/
 	$("#typed").typed({
-		strings: ["Coder Gods", "Solutions", "Innovation"],
+		strings: ["Desarrollo de Apps", "Desarrollo de Páginas Webs","Innovación", "Transformación Digital"],
 		typeSpeed: 100,
 		backDelay: 900,
 		loop: true,
@@ -131,7 +131,7 @@ function pogody(){
 	});
 	/Typed js for title tag/
 	$("#title").typed({
-		strings: ["Bienvenido!", "CoderGods", "Solutions"],
+		strings: ["Bienvenido!", "a", "CoderGods"],
 		typeSpeed: 300,
 		backDelay: 900,
 		loop: true,
