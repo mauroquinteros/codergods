@@ -1,476 +1,707 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title id="title">CoderGods</title>
-		<meta name="description" content="CoderGods" />
-		<meta name="keywords" content="CoderGods, Desarrollo de Apps, Desarrollo de chatbots, inteligencia artificial, desarrollo nativo, flutter, swift, angular, react, ionic, vue, php, nest, aws, Aplicaciones para celular, paginas web, desarrollo paginas web, cambio, transformación digital, revolución digital, coderwork, buenas practicas, codigo limpio, confiable, real" />
-		<meta name="author" content="luis hernandez" />
-		
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="/img/codergods.ico" type="image/x-icon">
-		
-		<!--Fonts - changed to Source Code Pro-->
-		<link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
-		
-		<!--CSS-->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	</head>
-	
-	<body data-ng-app="contactApp">
-		<!--Preloader-->
-		<div class="preloader-it">
-			<div class="la-anim-1"></div>
-		</div>
-		<!--/Preloader-->
-		
-		<!--Container-->
-		<div class="pad-zero">
-			
-			<!--Splitlayout -->
-			<div id="splitlayout" class="splitlayout reset-layout">
-				
-				<!--Intro-->
-				<div class="intro">
-					
-					<!--Left Content Intro-->
-					<div class="side side-left">
-						
-						<!--About Nav-->
-						<div class="call-to-action about">
-								<i class="fa fa-info fa-2x"></i>	
-								<i class="fa fa-times fa-2x opacity-hide"></i>	
-								<span class="top"></span>
-								<span class="right"></span>
-								<span class="bottom"></span>
-								<span class="left"></span>
-						</div>
-						<!--/About Nav-->
-						
-						<div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 align-center content-wrap">
-						
-						<!--Logo-->
-						<div class="logo align-center text-left"><img src="img/logo-cg.jpg" alt="logo" width="100px">
-						</div>
-						<!--/Logo-->
-						
-						<!--main content-->
-						<div class="main">
-							
-							<!--Content with Typing Intro-->
-							<section id="home" class="section active">
-								<div  class="preloader"></div>
-								<div class="align-center text-left">
-									<span class="small-hr animated fadeInLeft"  data-animation="fadeInLeft" data-out-animation="fadeOutLeft" data-out-animation-delay="200"></span>
-									<p class="animated fadeInLeft"  data-animation="fadeInLeft" data-out-animation="fadeOutLeft" data-out-animation-delay="300">Buscando un cambio?</p>
-									<div class="type-wrap text-left">
-										<h1  class="animated fadeInLeft"  data-animation="fadeInLeft" data-out-animation="fadeOutLeft" data-out-animation-delay="900"><span id="typed" ></span></h1>
-									</div>
-									<div class="notify-btn main-menu">
-										<a  href="#contact" class="btn btn-default animated fadeInLeft" data-hover="Notify me" data-animation="fadeInLeft" data-animation-delay="1000" data-out-animation="fadeInLeft" data-out-animation-delay="600" data-toggle="modal" data-target="#notify-my"><span class="button-label text-left">info</span><span class="arrow-wrap"><span class="arrow"></span></span></a>
-									</div>
-								</div>		
-							</section>
-							<!--/Content with Typing Intro-->
-							
-							<!--Notify Form-->
-							<section id="contact" class="section text-left">
-								<div  class="preloader"></div>	
-								<div class="main-menu">
-									<a class="close-notify black" href="#home" data-animation="fadeInDown" data-animation-delay="900" data-out-animation="fadeOutUp" data-out-animation-delay="100">
-										<div class="call-to-action">
-											<i class="fa fa-times fa-2x"></i>	
-											<span class="top"></span>
-											<span class="right"></span>
-											<span class="bottom"></span>
-											<span class="left"></span>
-										</div>
-									</a>
-								</div>
-								
-								<!--CONTENT CHANGED & <br> ADDED-->								
-								<div class="notify-wrap">
-									<h3 class="wellcome-text" data-animation="fadeInLeft" data-animation-delay="900" data-out-animation="fadeOutLeft" data-out-animation-delay="100" data-ng-bind="notify || 'hola'">Hola</h3>
-									<form id="notifyMe" class="contact-form" action="notify-me.php" method="post">
-										<div class="input-wrap" data-animation="fadeInLeft" data-animation-delay="100" data-out-animation="fadeOutLeft" data-out-animation-delay="900">
-											<input  data-ng-model="notify" class="col-lg-10  align-center form-control input input__field input__field--hoshi notify-input-box" name="email" placeholder="email"  type="email">
-											<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-										</div>	
-										<button type="submit" data-hover="Send" class="btn btn-default progress-button btn-submit " data-animation="fadeInUp" data-animation-delay="900" data-out-animation="fadeOutUp" data-out-animation-delay="1300">
-										<span><span class="arrow-wrap"><span class="arrow"></span></span></span>
-										</button>
-									</form>
-								</div>
-							</section>
-							<!--/Notify Form-->
-													
-							<div class="copyright">
-								<ul class="social-icons">
-									<li>
-										<a href="https://www.facebook.com/CoderGods/" class="social-icon">
-											<i class="fa fa-facebook"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/company/coder-gods" class="social-icon">
-											<i class="fa fa-linkedin"></i>
-										</a>
-									</li>
-								</ul>
-								<p>CoderGods © 2020</p>
-							</div>
-						</div>
-						<!--/main content-->
-						
-						</div>
-					</div>
-					<!--/Left Content Intro-->
-					
-					<!--Right Content Intro-->
-					<div class="side side-right">
-						<div class="layer clouds">
-							<div class="cloud cloud-1">
-								<img src="img/cloud-1.png" width="1600" height="850" alt="">
-							</div>
-							
-							<div class="cloud cloud-2">
-								<img src="img/cloud-2.png" width="1600" height="850" alt="">
-							</div>
-							
-							<div class="cloud cloud-3">
-								<img src="img/cloud-1.png" width="1600" height="850" alt="">
-							</div>
-						</div>
-						<!--Contect Nav-->
-						<div class="call-to-action contact">
-								<i class="fa fa-envelope fa-2x"></i>
-								<i class="fa fa-times fa-2x opacity-hide"></i>
-								<span class="top"></span>
-								<span class="right"></span>
-								<span class="bottom"></span>
-								<span class="left"></span>
-						</div>
-						<!--/Contect Nav-->
-						
-						<div class="counter-content">
-							<div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 align-center text-left">
-								<p class="tagline">Es hora del cambio!</p>
-								<p>Desarrollamos soluciones innovadoras, para potenciar tu negocio</p>								
-		
-								<div id="countdown">
-								  <span class="days">00</span>
-								</div>
-								<span class="small-hr"></span>
-								<span class="remain-days">Días restantes</span>
-								
-							</div>	
-						</div>
-					<div class="trans-overlay-dark"></div>	
-					</div>
-					<!--/Right Content Intro-->
-				</div>
-				<!--/Intro-->
-				
-				<!--About Section-->
-				<div class="page page-left">
-					<div  class="page-inner full-height">
-						<div class="container align-center detail-info">
-							<div class="row">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>Nosotros</h3>
-								</div>	
-								<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-									<p class="tagline">CoderGods.</p>
-									<span class="small-hr"></span>
-									<p class="align-center">En CoderGods desarrollamos soluciones tecnológicas (Web, Mobile & Desktop) para potenciar tu negocio utilizando metodologías ágiles, asegurando una alta implicación del equipo en el desarrollo del producto, mejorando la calidad, el tiempo de desarrollo y la adaptabilidad en el tiempo. Entre las tecnologias que usamos tenemos:</p>
-									
-									<!--Client Slider-->
-									<div id="qualities">
-										<div class="qualities"> 
-											<div class="item" >
-												<span class="fa-qual"><i class="fab fa-java"></i></span>
-												<span class="qual-tag">Java</span>
-												<span class="qual-desc">
-													Aplicaciones nativas para dispositivos Android.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fab fa-swift"></i></span>
-												<span class="qual-tag"> swift</span>
-												<span class="qual-desc">
-													Aplicaciones nativas para dispositivos IOS.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual" style="padding-top: 43px;"><img src="img/flutter.png" alt="" style="width: 36px; height: 36px;"></span>
-												<span class="qual-tag">flutter</span>
-												<span class="qual-desc">
-													Aplicaciones móviles para dispositivos Android & IOS.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fab fa-js-square"></i></span>
-												<span class="qual-tag"> javascript </span>
-												<span class="qual-desc">
-													Aplicaciones web responsivas y funcionales, frontend & backend.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fab fa-php"></i></span>
-												<span class="qual-tag"> php</span>
-												<span class="qual-desc">
-													Aplicaciones web responsivas y funcionales, frontend & backend.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fab fa-figma"></i></span>
-												<span class="qual-tag"> figma</span>
-												<span class="qual-desc">
-													Diseños profesionales utilizando estándares de UX/UI.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fab fa-aws"></i></span>
-												<span class="qual-tag"> aws</span>
-												<span class="qual-desc">
-													Integraciones con innovación tecnológica.
-												</span>
-											</div>
-										</div>
-									</div>
-									<!--/Client Slider-->
-								</div>	
-								
-								<!--Team Slider-->
-								<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-7 col-md-8 col-sm-8 col-xs-9 team-sec">
-									<p class="tagline">Nuestro Equipo</p>
-									<span class="small-hr"></span>
-									<div id="team">
-										<div class="team" class="owl-carousel"> 
-											<div class="item" >
-												<div class="team-img-wrap">
-													<img src="img/team2.jpg" alt="team1">
-													<div class="team-overlay">
-														<ul class="social-icons">
-															<li>
-																<a href="https://www.facebook.com/Nilo.Vila.Zamora" class="social-icon">
-																	<i class="fa fa-facebook"></i>
-																</a>
-															</li>
-															<li>
-																<a href="https://www.linkedin.com/in/nilovilazamora" class="social-icon" class="social-icon">
-																	<i class="fa fa-linkedin"></i>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>	
-												<span class="name"> Nilo Vila </span>
-												<span class="desg"> FullStack Developer </span>
-											</div>
-											<div class="item" >
-												<div class="team-img-wrap">
-													<img src="img/team2.jpg" alt="team1">
-													<div class="team-overlay">
-														<ul class="social-icons">
-															<li>
-																<a href="https://www.facebook.com/brandon.boluarte" class="social-icon">
-																	<i class="fa fa-facebook"></i>
-																</a>
-															</li>
-															<li>
-																<a href="https://www.linkedin.com/in/brandon-francisco-boluarte-poma-798014143" class="social-icon">
-																	<i class="fa fa-linkedin"></i>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>	
-												<span class="name"> Brandon Boluarte </span>
-												<span class="desg"> FullStack Developer </span>
-											</div>
-											<div class="item" >
-												<div class="team-img-wrap">
-													<img src="img/team2.jpg" alt="team1">
-													<div class="team-overlay">
-														<ul class="social-icons">
-															<li>
-																<a href="https://www.facebook.com/Mauro9905" class="social-icon">
-																	<i class="fa fa-facebook"></i>
-																</a>
-															</li>
-															<li>
-																<a href="https://www.linkedin.com/in/mauroquinteros" class="social-icon">
-																	<i class="fa fa-linkedin"></i>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>	
-												<span class="name"> Mauro Quinteros </span>
-												<span class="desg"> FullStack Developer	</span>
-											</div>
-											<div class="item" >
-												<div class="team-img-wrap">
-													<img src="img/team2.jpg" alt="team1">
-													<div class="team-overlay">
-														<ul class="social-icons">
-															<li>
-																<a href="https://www.facebook.com/abel.herediabravo/" class="social-icon">
-																	<i class="fa fa-facebook"></i>
-																</a>
-															</li>
-															<li>
-																<a href="https://www.linkedin.com/in/abelheredia" class="social-icon">
-																	<i class="fa fa-linkedin"></i>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>	
-												<span class="name"> Abel Heredia </span>
-												<span class="desg"> FullStack Developer	</span>
-											</div>
-											<div class="item">
-												<div class="team-img-wrap">
-													<img src="img/team2.jpg" alt="team1">
-													<div class="team-overlay">
-														<ul class="social-icons">
-															<li>
-																<a href="https://www.facebook.com/luisangel.navarrohernandez.5" class="social-icon">
-																	<i class="fa fa-facebook"></i>
-																</a>
-															</li>
-															<li>
-																<a href="https://www.linkedin.com/in/luis-angel-navarro-hernandez-306381155" class="social-icon">
-																	<i class="fa fa-linkedin"></i>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>	
-												<span class="name"> Luis Hernandez </span>
-												<span class="desg"> Web Developer </span>
-											</div>
-											<div class="item">
-												<div class="team-img-wrap">
-													<img src="img/team2.jpg" alt="team1">
-													<div class="team-overlay">
-														<ul class="social-icons">
-															<li>
-																<a href="https://www.facebook.com/luisangel.navarrohernandez.5" class="social-icon">
-																	<i class="fa fa-facebook"></i>
-																</a>
-															</li>
-															<li>
-																<a href="https://www.linkedin.com/in/luis-angel-navarro-hernandez-306381155" class="social-icon">
-																	<i class="fa fa-linkedin"></i>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>	
-												<span class="name"> Leonardo Quispe </span>
-												<span class="desg"> UX / UI Research </span>
-											</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title id="title">CoderGods</title>
+    <meta name="description" content="CoderGods" />
+    <meta
+      name="keywords"
+      content="CoderGods, Desarrollo de Apps, Desarrollo de chatbots, inteligencia artificial, desarrollo nativo, flutter, swift, angular, react, ionic, vue, php, nest, aws, Aplicaciones para celular, paginas web, desarrollo paginas web, cambio, transformación digital, revolución digital, coderwork, buenas practicas, codigo limpio, confiable, real"
+    />
+    <meta name="author" content="luis hernandez" />
 
-										</div>
-									</div>
-								</div>	
-								<!--/Team Slider-->
-							</div>
-						</div>
-						<div class="trans-overlay-dark-about"></div>
-					</div>		
-				</div>
-				<!--/About Section-->
-				
-				<!--Contact Section-->
-				<div class="page page-right">
-					<div  class="page-inner full-height">
-						<div class="container align-center detail-info">
-							<div class="row">
-							<div data-ng-controller="ContactController" class="panel-body">
-								<h3 class="col-lg-12 col-xs-9" data-ng-bind="formData.inputName||'Hola'">Contacto.</h3>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
-									<form data-ng-submit="submit(contactform, $event)"  name="contactform" method="post" class="form-horizontal" role="form">
-										<div class="form-group input--hoshi" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-											<div class="input-wrap">
-												<input data-ng-model="formData.inputName" type="text" class="form-control input__field input input__field--hoshi" id="inputName" name="inputName" placeholder="Nombre" required>
-												<label class="input__label input__label input__label--hoshi input__label--hoshi-color-1 input__label--hoshi input__label--hoshi-color-1" ></label>
-											</div>	
-										</div>
-										<div class="form-group  input--hoshi" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-											<div class="input-wrap">
-												<input data-ng-model="formData.inputEmail" type="email" class="form-control input input__field input__field--hoshi" placeholder="Email" id="inputEmail" name="inputEmail" required>
-												<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-											</div>	
-										</div>
-										<div class="form-group  input--hoshi" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-											<div class="input-wrap">
-												<textarea data-ng-model="formData.inputMessage" class="form-control input input__field input__field--hoshi" rows="4" id="inputMessage" name="inputMessage" placeholder="Mensaje" required></textarea>
-												<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-											</div>	
-										</div>
-										<div class="form-group">
-											<div class="align-center">
-												<button type="submit" class="btn btn-default" data-ng-disabled="submitButtonDisabled">
-													<span><span class="arrow-wrap"><span class="arrow"></span></span></span>
-												</button>
-											</div>
-										</div>
-									</form>
-									<p data-ng-class="result">{{ resultMessage }}</p>
-								</div>
-								<div class="col-lg-3 col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-9">
-									<div class="align-center address-detail">
-									<p>Calle Hungria 132 <br/>Lima - Perú.</p>
-									<div class="icon col-lg-2 col-md-2 col-sm-2 col-xs-1"><i class="fa fa-phone"></i></div>
-									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-11 pad-left-zero">
-										<a href="" target="_blank">+51 994 324 746</a>
-									</div>
-									<div class="icon col-lg-2 col-md-2 col-sm-2 col-xs-1"><i class="fa fa-envelope"></i></div>
-									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-11 pad-left-zero">
-										<a href="" target="_blank">nvila@codergods.pro</a>
-									</div>
-									</div>
-								</div>	
-								<!--Google Map-->
-								<iframe src="https://maps.google.com/maps?q=hungria%20132%2C%20Lima&t=&z=15&ie=UTF8&iwloc=&output=embed" width="1300" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-								<!--/Google Map-->
-							</div>
-							</div>
-						</div>
-							
-						<div class="trans-overlay-dark-contact"></div>	
-            		</div>
-				</div>
-				<!--/Contact Section-->
-				
-			</div>
-			<!-- /Splitlayout -->
-		
-		</div>
-		<!-- /Container -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="/img/codergods.ico" type="image/x-icon" />
 
-		<!-- Icons -->
-		<script src="https://kit.fontawesome.com/121b061443.js" crossorigin="anonymous"></script>
-		
-		<!-- Scripts -->
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/angular.min.js"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/cbpSplitLayout.js"></script>
-		<script src="js/jquery.countdown.js"></script>
-		<script src="js/typed.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/controllers.js"></script>
-		<script src="js/owl.carousel.js"></script>
-		<script src="js/input-text.js"></script>
-		<script src="js/notifyMe.js"></script>
-		<script src="js/jquery.placeholder.js"></script>
-		<script src="js/init.js"></script>
-	</body>
+    <!--Fonts - changed to Source Code Pro-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body data-ng-app="contactApp">
+    <!--Preloader-->
+    <div class="preloader-it">
+      <div class="la-anim-1"></div>
+    </div>
+    <!--/Preloader-->
+
+    <!--Container-->
+    <div class="pad-zero">
+      <!--Splitlayout -->
+      <div id="splitlayout" class="splitlayout reset-layout">
+        <!--Intro-->
+        <div class="intro">
+          <!--Left Content Intro-->
+          <div class="side side-left">
+            <!--About Nav-->
+            <div class="call-to-action about">
+              <i class="fa fa-info fa-2x"></i>
+              <i class="fa fa-times fa-2x opacity-hide"></i>
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
+            </div>
+            <!--/About Nav-->
+
+            <div
+              class="col-lg-8 col-md-9 col-sm-9 col-xs-9 align-center content-wrap"
+            >
+              <!--Logo-->
+              <div class="logo align-center text-left">
+                <img src="img/logo-cg.jpg" alt="logo" width="100px" />
+              </div>
+              <!--/Logo-->
+
+              <!--main content-->
+              <div class="main">
+                <!--Content with Typing Intro-->
+                <section id="home" class="section active">
+                  <div class="preloader"></div>
+                  <div class="align-center text-left">
+                    <span
+                      class="small-hr animated fadeInLeft"
+                      data-animation="fadeInLeft"
+                      data-out-animation="fadeOutLeft"
+                      data-out-animation-delay="200"
+                    ></span>
+                    <p
+                      class="animated fadeInLeft"
+                      data-animation="fadeInLeft"
+                      data-out-animation="fadeOutLeft"
+                      data-out-animation-delay="300"
+                    >
+                      Buscando un cambio?
+                    </p>
+                    <div class="type-wrap text-left">
+                      <h1
+                        class="animated fadeInLeft"
+                        data-animation="fadeInLeft"
+                        data-out-animation="fadeOutLeft"
+                        data-out-animation-delay="900"
+                      >
+                        <span id="typed"></span>
+                      </h1>
+                    </div>
+                    <div class="notify-btn main-menu">
+                      <a
+                        href="#contact"
+                        class="btn btn-default animated fadeInLeft"
+                        data-hover="Notify me"
+                        data-animation="fadeInLeft"
+                        data-animation-delay="1000"
+                        data-out-animation="fadeInLeft"
+                        data-out-animation-delay="600"
+                        data-toggle="modal"
+                        data-target="#notify-my"
+                        ><span class="button-label text-left">info</span
+                        ><span class="arrow-wrap"
+                          ><span class="arrow"></span></span
+                      ></a>
+                    </div>
+                  </div>
+                </section>
+                <!--/Content with Typing Intro-->
+
+                <!--Notify Form-->
+                <section id="contact" class="section text-left">
+                  <div class="preloader"></div>
+                  <div class="main-menu">
+                    <a
+                      class="close-notify black"
+                      href="#home"
+                      data-animation="fadeInDown"
+                      data-animation-delay="900"
+                      data-out-animation="fadeOutUp"
+                      data-out-animation-delay="100"
+                    >
+                      <div class="call-to-action">
+                        <i class="fa fa-times fa-2x"></i>
+                        <span class="top"></span>
+                        <span class="right"></span>
+                        <span class="bottom"></span>
+                        <span class="left"></span>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!--CONTENT CHANGED & <br> ADDED-->
+                  <div class="notify-wrap">
+                    <h3
+                      class="wellcome-text"
+                      data-animation="fadeInLeft"
+                      data-animation-delay="900"
+                      data-out-animation="fadeOutLeft"
+                      data-out-animation-delay="100"
+                      data-ng-bind="notify || 'hola'"
+                    >
+                      Hola
+                    </h3>
+                    <form
+                      id="notifyMe"
+                      class="contact-form"
+                      action="notify-me.php"
+                      method="post"
+                    >
+                      <div
+                        class="input-wrap"
+                        data-animation="fadeInLeft"
+                        data-animation-delay="100"
+                        data-out-animation="fadeOutLeft"
+                        data-out-animation-delay="900"
+                      >
+                        <input
+                          data-ng-model="notify"
+                          class="col-lg-10 align-center form-control input input__field input__field--hoshi notify-input-box"
+                          name="email"
+                          placeholder="email"
+                          type="email"
+                        />
+                        <label
+                          class="input__label input__label--hoshi input__label--hoshi-color-1"
+                        ></label>
+                      </div>
+                      <button
+                        type="submit"
+                        data-hover="Send"
+                        class="btn btn-default progress-button btn-submit"
+                        data-animation="fadeInUp"
+                        data-animation-delay="900"
+                        data-out-animation="fadeOutUp"
+                        data-out-animation-delay="1300"
+                      >
+                        <span
+                          ><span class="arrow-wrap"
+                            ><span class="arrow"></span></span
+                        ></span>
+                      </button>
+                    </form>
+                  </div>
+                </section>
+                <!--/Notify Form-->
+
+                <div class="copyright">
+                  <ul class="social-icons">
+                    <li>
+                      <a
+                        href="https://www.facebook.com/CoderGods/"
+                        class="social-icon"
+                      >
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/coder-gods"
+                        class="social-icon"
+                      >
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <p>CoderGods © 2020</p>
+                </div>
+              </div>
+              <!--/main content-->
+            </div>
+          </div>
+          <!--/Left Content Intro-->
+
+          <!--Right Content Intro-->
+          <div class="side side-right">
+            <div class="layer clouds">
+              <div class="cloud cloud-1">
+                <img src="img/cloud-1.png" width="1600" height="850" alt="" />
+              </div>
+
+              <div class="cloud cloud-2">
+                <img src="img/cloud-2.png" width="1600" height="850" alt="" />
+              </div>
+
+              <div class="cloud cloud-3">
+                <img src="img/cloud-1.png" width="1600" height="850" alt="" />
+              </div>
+            </div>
+            <!--Contect Nav-->
+            <div class="call-to-action contact">
+              <i class="fa fa-envelope fa-2x"></i>
+              <i class="fa fa-times fa-2x opacity-hide"></i>
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
+            </div>
+            <!--/Contect Nav-->
+
+            <div class="counter-content">
+              <div
+                class="col-lg-8 col-md-9 col-sm-9 col-xs-9 align-center text-left"
+              >
+                <p class="tagline">Es hora del cambio!</p>
+                <p>
+                  Desarrollamos soluciones innovadoras, para potenciar tu
+                  negocio
+                </p>
+
+                <div id="countdown">
+                  <span class="days">00</span>
+                </div>
+                <span class="small-hr"></span>
+                <span class="remain-days">Días restantes</span>
+              </div>
+            </div>
+            <div class="trans-overlay-dark"></div>
+          </div>
+          <!--/Right Content Intro-->
+        </div>
+        <!--/Intro-->
+
+        <!--About Section-->
+        <div class="page page-left">
+          <div class="page-inner full-height">
+            <div class="container align-center detail-info">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <h3>Nosotros</h3>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
+                  <p class="tagline">CoderGods.</p>
+                  <span class="small-hr"></span>
+                  <p class="align-center">
+                    En CoderGods desarrollamos soluciones tecnológicas (Web,
+                    Mobile & Desktop) para potenciar tu negocio utilizando
+                    metodologías ágiles, asegurando una alta implicación del
+                    equipo en el desarrollo del producto, mejorando la calidad,
+                    el tiempo de desarrollo y la adaptabilidad en el tiempo.
+                    Entre las tecnologias que usamos tenemos:
+                  </p>
+
+                  <!--Client Slider-->
+                  <div id="qualities">
+                    <div class="qualities">
+                      <div class="item">
+                        <span class="fa-qual"><i class="fab fa-java"></i></span>
+                        <span class="qual-tag">Java</span>
+                        <span class="qual-desc">
+                          Aplicaciones nativas para dispositivos Android.
+                        </span>
+                      </div>
+                      <div class="item">
+                        <span class="fa-qual"
+                          ><i class="fab fa-swift"></i
+                        ></span>
+                        <span class="qual-tag"> swift</span>
+                        <span class="qual-desc">
+                          Aplicaciones nativas para dispositivos IOS.
+                        </span>
+                      </div>
+                      <div class="item">
+                        <span class="fa-qual" style="padding-top: 43px;"
+                          ><img
+                            src="img/flutter.png"
+                            alt=""
+                            style="width: 36px; height: 36px;"
+                        /></span>
+                        <span class="qual-tag">flutter</span>
+                        <span class="qual-desc">
+                          Aplicaciones móviles para dispositivos Android & IOS.
+                        </span>
+                      </div>
+                      <div class="item">
+                        <span class="fa-qual"
+                          ><i class="fab fa-js-square"></i
+                        ></span>
+                        <span class="qual-tag"> javascript </span>
+                        <span class="qual-desc">
+                          Aplicaciones web responsivas y funcionales, frontend &
+                          backend.
+                        </span>
+                      </div>
+                      <div class="item">
+                        <span class="fa-qual"><i class="fab fa-php"></i></span>
+                        <span class="qual-tag"> php</span>
+                        <span class="qual-desc">
+                          Aplicaciones web responsivas y funcionales, frontend &
+                          backend.
+                        </span>
+                      </div>
+                      <div class="item">
+                        <span class="fa-qual"
+                          ><i class="fab fa-figma"></i
+                        ></span>
+                        <span class="qual-tag"> figma</span>
+                        <span class="qual-desc">
+                          Diseños profesionales utilizando estándares de UX/UI.
+                        </span>
+                      </div>
+                      <div class="item">
+                        <span class="fa-qual"><i class="fab fa-aws"></i></span>
+                        <span class="qual-tag"> aws</span>
+                        <span class="qual-desc">
+                          Integraciones con innovación tecnológica.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/Client Slider-->
+                </div>
+
+                <!--Team Slider-->
+                <div
+                  class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-7 col-md-8 col-sm-8 col-xs-9 team-sec"
+                >
+                  <p class="tagline">Nuestro Equipo</p>
+                  <span class="small-hr"></span>
+                  <div id="team">
+                    <div class="team" class="owl-carousel">
+                      <div class="item">
+                        <div class="team-img-wrap">
+                          <img src="img/team2.jpg" alt="team1" />
+                          <div class="team-overlay">
+                            <ul class="social-icons">
+                              <li>
+                                <a
+                                  href="https://www.facebook.com/Nilo.Vila.Zamora"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-facebook"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.linkedin.com/in/nilovilazamora"
+                                  class="social-icon"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-linkedin"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="name"> Nilo Vila </span>
+                        <span class="desg"> FullStack Developer </span>
+                      </div>
+                      <div class="item">
+                        <div class="team-img-wrap">
+                          <img src="img/team2.jpg" alt="team1" />
+                          <div class="team-overlay">
+                            <ul class="social-icons">
+                              <li>
+                                <a
+                                  href="https://www.facebook.com/brandon.boluarte"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-facebook"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.linkedin.com/in/brandon-francisco-boluarte-poma-798014143"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-linkedin"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="name"> Brandon Boluarte </span>
+                        <span class="desg"> FullStack Developer </span>
+                      </div>
+                      <div class="item">
+                        <div class="team-img-wrap">
+                          <img src="img/team2.jpg" alt="team1" />
+                          <div class="team-overlay">
+                            <ul class="social-icons">
+                              <li>
+                                <a
+                                  href="https://www.facebook.com/Mauro9905"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-facebook"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.linkedin.com/in/mauroquinteros"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-linkedin"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="name"> Mauro Quinteros </span>
+                        <span class="desg"> FullStack Developer </span>
+                      </div>
+                      <div class="item">
+                        <div class="team-img-wrap">
+                          <img src="img/team2.jpg" alt="team1" />
+                          <div class="team-overlay">
+                            <ul class="social-icons">
+                              <li>
+                                <a
+                                  href="https://www.facebook.com/abel.herediabravo/"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-facebook"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.linkedin.com/in/abelheredia"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-linkedin"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="name"> Abel Heredia </span>
+                        <span class="desg"> FullStack Developer </span>
+                      </div>
+                      <div class="item">
+                        <div class="team-img-wrap">
+                          <img src="img/team2.jpg" alt="team1" />
+                          <div class="team-overlay">
+                            <ul class="social-icons">
+                              <li>
+                                <a
+                                  href="https://www.facebook.com/luisangel.navarrohernandez.5"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-facebook"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.linkedin.com/in/luis-angel-navarro-hernandez-306381155"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-linkedin"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="name"> Luis Hernandez </span>
+                        <span class="desg"> Web Developer </span>
+                      </div>
+                      <div class="item">
+                        <div class="team-img-wrap">
+                          <img src="img/team2.jpg" alt="team1" />
+                          <div class="team-overlay">
+                            <ul class="social-icons">
+                              <li>
+                                <a
+                                  href="https://www.facebook.com/luisangel.navarrohernandez.5"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-facebook"></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.linkedin.com/in/luis-angel-navarro-hernandez-306381155"
+                                  class="social-icon"
+                                >
+                                  <i class="fa fa-linkedin"></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="name"> Leonardo Quispe </span>
+                        <span class="desg"> UX / UI Research </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/Team Slider-->
+              </div>
+            </div>
+            <div class="trans-overlay-dark-about"></div>
+          </div>
+        </div>
+        <!--/About Section-->
+
+        <!--Contact Section-->
+        <div class="page page-right">
+          <div class="page-inner full-height">
+            <div class="container align-center detail-info">
+              <div class="row">
+                <div data-ng-controller="ContactController" class="panel-body">
+                  <h3
+                    class="col-lg-12 col-xs-9"
+                    data-ng-bind="formData.inputName||'Hola'"
+                  >
+                    Contacto.
+                  </h3>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
+                    <div id="result-message" class="px-2 py-3"></div>
+                    <form
+                      id="contact-form"
+                      name="contactForm"
+                      data-ng-submit="submit(contactform, $event)"
+                      method="POST"
+                      class="form-horizontal"
+                      role="form"
+                    >
+                      <div
+                        class="form-group input--hoshi"
+                        data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }"
+                      >
+                        <div class="input-wrap">
+                          <input
+                            data-ng-model="formData.inputName"
+                            id="user-name"
+                            name="userName"
+                            type="text"
+                            class="form-control input__field input input__field--hoshi"
+                            placeholder="Nombre"
+                          />
+                          <label
+                            class="input__label input__label input__label--hoshi input__label--hoshi-color-1 input__label--hoshi input__label--hoshi-color-1"
+                          ></label>
+                        </div>
+                      </div>
+                      <div
+                        class="form-group input--hoshi"
+                        data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }"
+                      >
+                        <div class="input-wrap">
+                          <input
+                            id="user-email"
+                            name="userEmail"
+                            data-ng-model="formData.inputEmail"
+                            type="email"
+                            class="form-control input input__field input__field--hoshi"
+                            placeholder="Email"
+                          />
+                          <label
+                            class="input__label input__label--hoshi input__label--hoshi-color-1"
+                          ></label>
+                        </div>
+                      </div>
+                      <div
+                        class="form-group input--hoshi"
+                        data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }"
+                      >
+                        <div class="input-wrap">
+                          <textarea
+                            id="user-message"
+                            name="userMessage"
+                            data-ng-model="formData.inputMessage"
+                            class="form-control input input__field input__field--hoshi"
+                            rows="4"
+                            placeholder="Mensaje"
+                          ></textarea>
+                          <label
+                            class="input__label input__label--hoshi input__label--hoshi-color-1"
+                          ></label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="align-center">
+                          <button
+                            id="submit-button"
+                            type="submit"
+                            class="btn btn-default"
+                            data-ng-disabled="submitButtonDisabled"
+                            style="background-color: #000;"
+                          >
+                            <span
+                              ><span class="arrow-wrap"
+                                ><span class="arrow"></span></span
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="col-lg-3 col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-9"
+                  >
+                    <div class="align-center address-detail">
+                      <p>Calle Hungria 132 <br />Lima - Perú.</p>
+                      <div class="icon col-lg-2 col-md-2 col-sm-2 col-xs-1">
+                        <i class="fa fa-phone"></i>
+                      </div>
+                      <div
+                        class="col-lg-10 col-md-10 col-sm-10 col-xs-11 pad-left-zero"
+                      >
+                        <a href="" target="_blank">+51 994 324 746</a>
+                      </div>
+                      <div class="icon col-lg-2 col-md-2 col-sm-2 col-xs-1">
+                        <i class="fa fa-envelope"></i>
+                      </div>
+                      <div
+                        class="col-lg-10 col-md-10 col-sm-10 col-xs-11 pad-left-zero"
+                      >
+                        <a href="mailto:nvila@codergods.pro" target="_blank"
+                          >nvila@codergods.pro</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!--Google Map-->
+                  <iframe
+                    src="https://maps.google.com/maps?q=hungria%20132%2C%20Lima&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="1300"
+                    height="600"
+                    frameborder="0"
+                    style="border: 0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"
+                  ></iframe>
+                  <!--/Google Map-->
+                </div>
+              </div>
+            </div>
+
+            <div class="trans-overlay-dark-contact"></div>
+          </div>
+        </div>
+        <!--/Contact Section-->
+      </div>
+      <!-- /Splitlayout -->
+    </div>
+    <!-- /Container -->
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/121b061443.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Scripts -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpSplitLayout.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/input-text.js"></script>
+    <script src="js/notifyMe.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/email.js"></script>
+  </body>
 </html>
