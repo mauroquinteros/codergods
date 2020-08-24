@@ -1,7 +1,7 @@
 const $contactForm = document.querySelector("#contact-form");
 const $submitButton = document.querySelector("#submit-button");
 const $resultMessage = document.querySelector("#result-message");
-const URL = "http://localhost:3000/send";
+const URL = "https://email-codergods.herokuapp.com/send";
 
 let userName = document.querySelector("#user-name");
 let userEmail = document.querySelector("#user-email");
@@ -49,12 +49,23 @@ function validateInputs() {
 
 function createMessage({ message, success }) {
   removeMessage();
-  const messageElement = document.createElement("p");
-  messageElement.innerText = message;
+
+  // Adding child nodes to the resultMessage node
+  const messageElement = document.createElement("div");
+  messageElement.innerHTML = `
+    <p>${message}</p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    `;
+  messageElement.setAttribute("role", "alert");
+  messageElement.classList.add("alert", "alert-dismissible", "fade", "show");
+
   $resultMessage.appendChild(messageElement);
+
   success
-    ? messageElement.classList.add("alert", "alert-success")
-    : messageElement.classList.add("alert", "alert-danger");
+    ? messageElement.classList.add("alert-success")
+    : messageElement.classList.add("alert-danger");
 }
 
 function removeMessage() {
